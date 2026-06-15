@@ -1,0 +1,8 @@
+[profiles.pi4_4gb]
+models = ["qwen2.5:0.5b"]
+
+[profiles.pi4_8gb]
+models = ["qwen2.5:1.5b", "llama3.2:1b"]
+
+[default]
+profile = "auto"

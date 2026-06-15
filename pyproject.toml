@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jarvis"
+version = "0.1.0"
+description = "Home automation with LLMs on Raspberry Pi"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ollama>=0.6.2",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+jarvis = "jarvis.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["jarvis"]
